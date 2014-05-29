@@ -1,0 +1,121 @@
+/*poster.css
+created by: Jeff Hollister
+date:       May 2014
+what:       First cut of an experiment to layout a poster with css.  Used in 
+            conjuction with .Rmd, knitr, pandoc, and makefiles to create a LaTeX and
+            Beamer free poster (mainly becuase I suck at LaTeX). So, I also suck at 
+            CSS, but not as bad.  So here is a hack to get the positioing done.
+            I had to use % for horizontal positioning and inches for vertical
+            positions.  I don't know why...
+*/
+
+/*Table of Contents
+# Poster setup
+# Title
+# Introduction
+# Methods
+# Results
+# Conclusions
+# @media print
+*/
+
+/* #Poster Setup 
+=================*/
+
+/* Sets overall page size in inches and sets up columns */
+@viewport {
+  	width: 17in;
+  	height: 11in;
+	}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+div#poster {
+	position:absolute;
+	width: 98%;
+	height: 98%;
+	top: 1%;
+	left: 1%;
+	border: thick solid black;
+	background: MistyRose;
+	font-family: sans-serif;
+	color: SlateGray;
+}
+
+/* #Title
+=========*/
+
+/*Positioning*/
+div#title {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: blue;
+}
+
+div#title h1 {
+	color: black;
+	font-size: 2.5em;
+}
+
+div#title h2 {
+	color: white;
+	font-size: 1.5em;
+}
+
+
+
+/* #Introduction
+================*/
+
+/*Positioning*/
+div#introduction {
+  position: absolute;
+  text-align: justify;
+  left: 2%;
+  top: 2in;
+  width: 30.667%;
+}
+
+/* #Methods
+===========*/
+
+/*Positioning*/
+div#methods {
+  position: absolute;
+  text-align: justify;
+	left: 2%;
+	width: 30.667%;
+	top: 6in;
+}
+
+/* #Results
+===========*/
+
+/*Positioning*/
+div#results {
+  position: absolute;
+  text-align: justify;
+  left:   34.667%;
+  top: 2in;
+  width:  30.667%;
+}
+
+/* #Conclusions
+===============*/
+
+/*Positioning*/
+div#conclusions {
+  position: absolute;
+  text-align: justify;
+  left: 67.334%;
+  top: 2in;
+  width: 30.667%;
+}
+
+

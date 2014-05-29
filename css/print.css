@@ -1,0 +1,4 @@
+/* print version */
+@media print {
+  @import url(poster.css);
+}
