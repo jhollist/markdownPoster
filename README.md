@@ -13,3 +13,4 @@ I used wkhtmltopdf and not pandoc to convert to pdf as I could not get the css s
 
 The makefile implements this workflow.
 
+Oh, and the styling, colors, etc are just placeholders at the moment.  I am bad on design, but not that bad!
